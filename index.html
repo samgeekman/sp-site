@@ -4,7 +4,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Space Prospector</title>
-    <link rel="stylesheet" href="styles.css?v=27" />
+    <link rel="stylesheet" href="styles.css?v=29" />
+    <script>
+      (function (s, e, n, d, er) {
+        s['Sender'] = er;
+        s[er] = s[er] || function () {
+          (s[er].q = s[er].q || []).push(arguments);
+        }, s[er].l = 1 * new Date();
+        s[er].on = function(event, callback) {
+          s[er].listeners = s[er].listeners || {};
+          (s[er].listeners[event] = s[er].listeners[event] || []).push(callback);
+        };
+        var a = e.createElement(n),
+            m = e.getElementsByTagName(n)[0];
+        a.async = 1;
+        a.src = d;
+        m.parentNode.insertBefore(a, m);
+      })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js?explicit=true', 'sender');
+      sender('aee0ee943c7071');
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -82,6 +100,11 @@
       <button class="lightbox-close" type="button" aria-label="Close image preview">×</button>
       <img id="lightbox-image" alt="" />
     </dialog>
-    <script src="script.js?v=21"></script>
+    <dialog class="mailing-list-dialog" id="mailing-list-dialog" aria-labelledby="mailing-list-title">
+      <button class="mailing-list-close" type="button" aria-label="Close mailing list form">×</button>
+      <h2 id="mailing-list-title">Join the mailing list</h2>
+      <div class="sender-form-field" data-sender-form-id="en53lY"></div>
+    </dialog>
+    <script src="script.js?v=22"></script>
   </body>
 </html>

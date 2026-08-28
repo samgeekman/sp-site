@@ -306,6 +306,57 @@ nav a:focus-visible {
   color: #fff;
 }
 
+.mailing-list-dialog {
+  width: min(92vw, 560px);
+  max-width: none;
+  padding: 32px;
+  border: 1px solid var(--green);
+  background: var(--black);
+  color: var(--green);
+  box-shadow: 0 0 24px rgba(0, 255, 157, 0.32);
+}
+
+.mailing-list-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.82);
+}
+
+.mailing-list-dialog h2 {
+  margin: 0 0 24px;
+  font: bold 24px/1 var(--mono);
+}
+
+.mailing-list-dialog .sender-form-field {
+  position: relative;
+  text-align: center;
+}
+
+.mailing-list-dialog .sender-form-field::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 64px;
+  background: #000;
+  content: "";
+  pointer-events: none;
+}
+
+.mailing-list-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  border: 0;
+  background: transparent;
+  color: var(--green);
+  cursor: pointer;
+  font: 24px/1 var(--mono);
+}
+
+.mailing-list-close:hover,
+.mailing-list-close:focus-visible {
+  color: #fff;
+}
+
 #planet-art {
   position: fixed;
   inset: 0;

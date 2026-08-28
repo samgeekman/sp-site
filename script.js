@@ -222,4 +222,29 @@
   lightbox.addEventListener("click", (event) => {
     if (event.target === lightbox) lightbox.close();
   });
+
+  const mailingListDialog = document.querySelector("#mailing-list-dialog");
+  const mailingListClose = document.querySelector(".mailing-list-close");
+  if (!mailingListDialog || !mailingListClose) return;
+
+  document.querySelectorAll('a[href="#mailing-list"]').forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      mailingListDialog.showModal();
+      const renderForm = () => {
+        if (window.senderForms?.render) {
+          window.senderForms.render("en53lY");
+          return true;
+        }
+        return false;
+      };
+      if (!renderForm() && !window.senderFormsLoaded) {
+        window.addEventListener("onSenderFormsLoaded", renderForm, { once: true });
+      }
+    });
+  });
+  mailingListClose.addEventListener("click", () => mailingListDialog.close());
+  mailingListDialog.addEventListener("click", (event) => {
+    if (event.target === mailingListDialog) mailingListDialog.close();
+  });
 })();
