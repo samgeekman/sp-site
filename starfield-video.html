@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Space Prospector — Starfield</title>
+    <style>
+      :root {
+        --green: #00ff9d;
+        --black: #090b0a;
+        --mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        background: var(--black);
+      }
+
+      #planet-art {
+        position: fixed;
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+        color: var(--green);
+        font: 700 clamp(7px, 1vw, 12px)/1.02 var(--mono);
+        font-variant-ligatures: none;
+        text-shadow: 0 0 5px var(--green);
+        user-select: none;
+      }
+
+      .logo {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        width: max-content;
+        max-width: 94vw;
+        margin: 0;
+        color: var(--green);
+        font: 700 clamp(12px, 2.6vw, 42px)/1 var(--mono);
+        font-variant-ligatures: none;
+        text-align: left;
+        text-shadow: 0 0 12px var(--green);
+        transform: translate(-50%, -50%);
+        white-space: pre;
+      }
+    </style>
+  </head>
+  <body>
+    <pre id="planet-art" aria-label="Star field"></pre>
+    <pre class="logo" aria-label="Space Prospector logo">
+ ▞▀▖             ▛▀▖                  ▐          
+ ▚▄ ▛▀▖▝▀▖▞▀▖▞▀▖ ▙▄▘▙▀▖▞▀▖▞▀▘▛▀▖▞▀▖▞▀▖▜▀ ▞▀▖▙▀▖
+ ▖ ▌▙▄▘▞▀▌▌ ▖▛▀  ▌  ▌  ▌ ▌▝▀▖▙▄▘▛▀ ▌ ▖▐ ▖▌ ▌▌
+ ▝▀ ▌  ▝▀▘▝▀ ▝▀▘ ▘  ▘  ▝▀ ▀▀ ▌  ▝▀▘▝▀  ▀ ▝▀ ▘
+     -- AN ASCII SPACE EXPLORATION GAME --
+    </pre>
+    <script src="script.js?v=21"></script>
+  </body>
+</html>

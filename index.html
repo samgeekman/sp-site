@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Space Prospector</title>
+    <link rel="stylesheet" href="styles.css?v=27" />
+  </head>
+  <body>
+    <header class="site-header">
+      <pre class="logo" aria-label="Space Prospector logo">
+ ▞▀▖             ▛▀▖                  ▐          
+ ▚▄ ▛▀▖▝▀▖▞▀▖▞▀▖ ▙▄▘▙▀▖▞▀▖▞▀▘▛▀▖▞▀▖▞▀▖▜▀ ▞▀▖▙▀▖
+ ▖ ▌▙▄▘▞▀▌▌ ▖▛▀  ▌  ▌  ▌ ▌▝▀▖▙▄▘▛▀ ▌ ▖▐ ▖▌ ▌▌
+ ▝▀ ▌  ▝▀▘▝▀ ▝▀▘ ▘  ▘  ▝▀ ▀▀ ▌  ▝▀▘▝▀  ▀ ▝▀ ▘
+     -- AN ASCII SPACE EXPLORATION GAME --
+    <br>
+    </pre>
+      <span class="coming-soon">Coming soon</span>
+      <nav aria-label="Main navigation">
+        <a href="#mailing-list">Mailing list</a>
+        <a href="https://discord.gg/6QuUPAxUTf">Discord</a>
+      </nav>
+    </header>
+     <main class="loading-screen">
+      <pre id="planet-art" aria-label="ASCII planet"></pre>
+      <section class="intro-grid" aria-label="Game introduction">
+        <div class="intro-copy">
+          <h1>Prospect the frontier</h1>
+          <p><strong>Space Prospector is an upcoming terminal ASCII exploration game about charting strange worlds, finding valuable resources, and deciding who gets the spoils.</strong></p>
+          <p>A single dev's labour of love for fans of Elite, Dwarf Fortress and Warsim, this is a chance to explore a rich procedurally generated galaxy in timeless retro style.</p>
+          <p>Coming soon. Join the <a href="#mailing-list">Mailing list</a> and <a href="https://discord.gg/6QuUPAxUTf">Discord</a>.</p>
+        </div>
+        <div class="video-frame">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/-YWSNk0xyC8?si=wabumcljTCV3GTYR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </section>
+      <section class="feature-grid" aria-label="Featured content">
+        <article class="feature-card">
+          <h2>Control your ship's terminal</h2>
+          <div class="image-wrap">
+            <img class="image-slot" src="static/screen_1_home_screen.jpg" alt="Space Prospector home screen" />
+            <svg class="lightbox-indicator" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+          </div>
+          <div class="card-copy">Chart the galactic frontier through your ship’s retro ASCII computer interface in this fully terminal game.</div>
+        </article>
+        <article class="feature-card">
+          <h2>Land on and survey ASCII planets</h2>
+          <div class="image-wrap">
+            <img class="image-slot" src="static/screen_2_planet.jpg" alt="Space Prospector planet view" />
+            <svg class="lightbox-indicator" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+          </div>
+          <div class="card-copy">Survey planets and mine resources, then sell your findings to battling factions to watch their influence grow and the galaxy evolve.</div>
+        </article>
+        <article class="feature-card">
+          <h2>A procedural galaxy to explore</h2>
+          <div class="image-wrap">
+            <img class="image-slot" src="static/screen_3_planetary_map.jpg" alt="Space Prospector planetary map" />
+            <svg class="lightbox-indicator" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+          </div>
+          <div class="card-copy">Tens of thousands of planets, moons, asteroid fields, stations, settlements, and factions to explore - and a storyline to experience.</div>
+        </article>
+      </section>
+    </main>
+    <section class="plus-block" aria-label="Additional features">
+      <p><strong>Plus: </strong>Galactic politics, pretty ascii animations, space combat and piracy, manage your ship’s systems, refine component upgrades, thousands of jobs and tasks, explore subterranean caves, mine asteroid fields, daily news reports, track galactic sports scores, speak to local residents, receive galactic email spam!</p>
+    </section>
+    <footer class="site-footer">
+      <span class="footer-logo" aria-label="Space Prospector">A game by samgeekman</span>
+      <div class="footer-actions">
+        <a href="#mailing-list">Mailing list</a>
+        <a href="https://discord.gg/6QuUPAxUTf">Discord</a>
+      </div>
+    </footer>
+    <dialog class="lightbox" id="lightbox" aria-label="Screenshot preview">
+      <button class="lightbox-close" type="button" aria-label="Close image preview">×</button>
+      <img id="lightbox-image" alt="" />
+    </dialog>
+    <script src="script.js?v=21"></script>
+  </body>
+</html>
